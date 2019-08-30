@@ -1,0 +1,11 @@
+Notes on vi Commands:
+
+i – start editing
+
+Esc button – stop editing
+
+:# – jumps curser to that line number
+
+:w – write/saves file
+
+:q – quits and goes back to terminal
