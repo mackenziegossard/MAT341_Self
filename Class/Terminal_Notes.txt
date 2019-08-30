@@ -1,5 +1,16 @@
-Notes on Terminal Commands
+Notes on Terminal Commands:
 
--ls: lists every file/folder in directory
+cd: change directory
 
--cd: changes directory
+cd ..: moves up a directory
+
+ls: shows all folders/files in a directory
+
+pwd: shows what directory you are in
+
+clear: clears terminal
+
+mkdir: make directory
+
+vi [file name]:  open text editor
+

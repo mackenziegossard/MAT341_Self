@@ -1,7 +1,11 @@
-Stage, commit, and push to github
+Notes on Github Commands:
 
-git add [directory]
+- git pull: updates github
 
-git commit -m "notes for yourself"
+Cloning a repository:
+- git clone [link] 
 
-git push
+Stage, commit, and push to github:
+1. git add [directory]
+2. git commit -m "notes for yourself"
+3. git push
