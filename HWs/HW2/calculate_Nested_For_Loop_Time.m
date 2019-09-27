@@ -1,3 +1,8 @@
+%
+% Function that takes one input: N
+% Calculates the run time for a nested for loop
+%
+
 function time = calculate_Nested_For_Loop_Time(N)
 
 tic

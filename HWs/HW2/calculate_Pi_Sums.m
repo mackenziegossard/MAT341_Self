@@ -1,8 +1,15 @@
+%
+% function that takes no inputs
+% calculates two different pi approximations
+% finds the smallest N for which the apporoximation
+% is smaller than the tolerance
+%
+
 function calculate_Pi_Sums()
 
 format long
 
-tol = 1e-6; % tolerance awat from pi
+tol = 1e-6; % tolerance away from pi
 err1 = 1;
 
 % first approximation of pi
