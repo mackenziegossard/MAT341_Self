@@ -15,7 +15,7 @@ function val = Nelder_Mead(tol)
 n = 0;
 
 % creates vectors with x and y points and stores in matrix
-points = [0.35, 2.8; -.25, .3; 1.5, 0.5];
+points = [0.35, 2.8; 4, 4; 4.5, 4.5];
 
 
 % creates matrix of function values for vectors
@@ -27,7 +27,7 @@ x1 = points(indsVec(1), :);
 x2 = points(indsVec(2), :);
 x3 = points(indsVec(3), :); 
 
-while (abs(x1-x3)) > tol
+while (abs(f(x1)-f(x3))) > tol
     % compute midpoint between x1 and x2
     xm = .5*(x1 - x3);
     
@@ -68,19 +68,18 @@ x1
 function val = f(x)
 val = -(sin(x(1)) + cos(x(2)));
 
-% Part A and B:
-% It takes 7 itertions to achieve 1e-8 accuracy
-% It appears to converge to (1.4711, 0.1250)
-% The true point where the minima is located is (1,0)
-% This does not look like 1e-8 acuracy but the accuracy we are checking is
-% how close the two fucntion values are to each other not how close the
-% fucntions value is to the true minimum 
+% Part a and b:
+% It takes 27 itertions to achieve 1e-8 accuracy
+% It appears to converge to (1.5708, 0.1250)
+% The true point where the minima is located is (pi/2,0)
+% This does not look like 1e-8 accuracy but the accuracy we are checking is
+% how close the two function values are to each other not how close the
+% functions value is to the true minimum 
 
-% Part C
-% It takes 28 iterations to achieve 1e-8 accuracy
+% Part c:
+% It takes 25 iterations to achieve 1e-8 accuracy
 % It appears to converage to (1.5582, 0.0592)
-% Even though the second initial value is closer to the minima the number
-% of iterations increased
+% Because the second point is closer it converged faster
 
-% Part D
-% It keeps running for these values 
+% Part d:
+% It keeps running for these values

@@ -48,7 +48,7 @@ xlabel('tol');
 ylabel('N');
 legend('Golden Search','Succ. Para. Interp.', 'Newton Method')
 
-% The Newton's Methods always converges quicker
+% The Newton's Methods always appears converge quicker
 %
 % To change the convergence rates for these algorithms you could chage the 
 % x values you start with

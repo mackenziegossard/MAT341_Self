@@ -1,25 +1,30 @@
-% Newton's Method:
-%   roots of equation: f(x) = 0
-%   use derivative to speed up convergence to a root
 %
-% Algorithm for optimization:
-%   1. guess xn
-%   2. while err > tol
-%       xm = xn - f'(xn)/f''(xn)
-%   3. xn = xm
+% Script that uses Newton's Method to find the minimum of a function
+%
+% Input: tol - error tolerance
 %
 
 function N = Newtons_1D_Opt(tol)
 
-xn = .25;
-xm = 0;
+% initalizes error at 1
 err = 1;
+% initalizes the counter, N, at zero
 N = 0;
 
+% inital guesses 
+xn = 0.25;
+
 while err > tol
+    % next guess is equal to the inital guess minus f'(x) divided by f''(x)
     xm = xn - (fd1(xn) / fd2(xn));
+    
+    % calculates the error
     err = abs(xm-xn);
+    
+    % sets xm as your new inital guess 
     xn = xm;
+    
+    % increments the counter by one
     N = N+1;
 end
 
