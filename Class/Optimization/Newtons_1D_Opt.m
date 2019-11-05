@@ -1,4 +1,3 @@
-
 function N = Newtons_1D_Opt(tol)
 
 xn = .25;
@@ -24,8 +23,3 @@ val = exp(-(x^2)) * (2*(x^2) - 1);
 % second derivative of the function 
 function val = fd2(x)
 val = exp(-(x^2)) * (6*x - 4*(x^3));
-
-% at x1 = .25 it takes 6 iteration to acehive 1e-8
-% at x1 = 1.5 it takes 736 iteration to acehive 1e-8
-% at each iteration you subtract a littel bit off from your inital guess so
-% the higher you initial guess the more iterations it will take

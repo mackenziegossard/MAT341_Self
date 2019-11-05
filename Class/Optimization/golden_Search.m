@@ -1,10 +1,3 @@
-%
-% Script that runs the golden search algorithm to find the minimum of a
-% certain function
-%
-% Input: tol - error tolerance
-%
-
 function N = golden_Search(tol)
 
 % initializes a and b at the end points of an certain interval  

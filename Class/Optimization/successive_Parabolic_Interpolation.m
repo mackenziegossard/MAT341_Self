@@ -1,10 +1,3 @@
-%
-% Script that runs the successive parabolic interpolation algorithm to 
-% find the minimum of a certain function
-%
-% Input: tol - error tolerance
-%
-
 function N = successive_Parabolic_Interpolation(tol)
 
 % initilizes three points along the function
