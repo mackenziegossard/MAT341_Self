@@ -1,0 +1,17 @@
+function vary_StepSize_Gamma_To_Optimize()
+
+% gamma values to test
+gamma = [.1 .2 .3 .4 .5 .6 .7 .8 .9 1 1.1 1.2 1.3 1.4 1.5 1.6 1.7 1.8 1.9];
+
+% loops over all the tolerances
+for i = 1:length(gamma)
+    % runs the gradient descent for a specific tolerance
+    gradient(i) = Gradient_Descent_1(1e-10, gamma(i));
+end
+
+gradient
+
+lw = 5;
+s(gamma, gradeint, 'b', 'LineWidth',lw)
+xlabel('gamma');
+ylabel('# of iterations');
