@@ -15,7 +15,7 @@ function val = Nelder_Mead(tol)
 n = 0;
 
 % creates vectors with x and y points and stores in matrix
-points = [0.35, 2.8; 4, 4; 4.5, 4.5];
+points = [0.35, 2.8; -0.25, 0.3; 1.5, 0.5];
 
 
 % creates matrix of function values for vectors
@@ -62,6 +62,7 @@ end
 
 n
 x1
+x3
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -73,8 +74,7 @@ val = -(sin(x(1)) + cos(x(2)));
 % It appears to converge to (1.5708, 0.1250)
 % The true point where the minima is located is (pi/2,0)
 % This does not look like 1e-8 accuracy but the accuracy we are checking is
-% how close the two function values are to each other not how close the
-% functions value is to the true minimum 
+% the two function values not the vector values
 
 % Part c:
 % It takes 25 iterations to achieve 1e-8 accuracy
