@@ -7,7 +7,7 @@
 function vary_StepSize_Gamma_To_Optimize()
 
 % gamma values to test
-gamma = [.1 .2 .3 .4 .5 .6 .7 .8 .9 1 1.1 1.2 1.3 1.4 1.5 1.6 1.7 1.8 1.9];
+gamma = [0.1:0.02:1.5];
 
 % loops over all the gamma
 for i = 1:length(gamma)
