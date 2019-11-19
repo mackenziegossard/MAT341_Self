@@ -1,3 +1,11 @@
+%
+% script that finds the minimum of a particualr fuction using the gradient 
+% descent method with a fixed step size
+%
+% Inputs: 1. tol - tolerance 
+%         2. gamma - fixed step size 
+%
+
 function N = Gradient_Descent_1(tol, gamma)
 
 % initilizes error at 1

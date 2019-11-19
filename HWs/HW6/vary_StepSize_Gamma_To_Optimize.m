@@ -1,3 +1,9 @@
+%
+% Script that runs the gradient descent methods with varying step sizes, 
+% gamma, and plots the number of iterations needed to find the minimum for
+% that particular gamma
+%
+
 function vary_StepSize_Gamma_To_Optimize()
 
 % gamma values to test
@@ -15,4 +21,4 @@ xlabel('gamma');
 ylabel('# of iterations');
 legend('Fixed Step')
 
-% The ?best? step-size, gamma, seems to be 1
+% The best step-size, gamma, seems to be 1
